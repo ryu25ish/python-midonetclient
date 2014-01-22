@@ -304,8 +304,7 @@ class MidonetApi(object):
     def unlink(self, port):
         if port.get_peer_id():
             peer_id = port.get_peer_id()
-            port.unlink()
-            self.delete_port(peer_id)
+            port.unlink() self.delete_port(peer_id)
 
     def add_router_route(self, router, type='Normal',
                          src_network_addr=None, src_network_length=None,
@@ -316,7 +315,7 @@ class MidonetApi(object):
         route = router.add_route().type(type)
         route = route.src_network_addr(src_network_addr).src_network_length(
             src_network_length).dst_network_addr(
-                dst_network_addr).dst_network_length(dst_network_length)
+            dst_network_addr).dst_network_length(dst_network_length)
         route = route.next_hop_port(next_hop_port).next_hop_gateway(
             next_hop_gateway).weight(weight)
 
