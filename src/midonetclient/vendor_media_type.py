@@ -130,5 +130,3 @@ APPLICATION_IP_ADDR_GROUP_ADDR_JSON = \
     "application/vnd.org.midonet.IpAddrGroupAddr-v1+json"
 APPLICATION_IP_ADDR_GROUP_ADDR_COLLECTION_JSON = \
     "application/vnd.org.midonet.collection.IpAddrGroupAddr-v1+json"
-
-
